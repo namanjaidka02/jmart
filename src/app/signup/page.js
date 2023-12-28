@@ -23,7 +23,7 @@ const SignUp = () => {
   if (isSuccess) {
     setTimeout(() => {
       router.push("/login");
-    }, 1000);
+    });
   }
 
   const handleClick = (e) => {
@@ -87,14 +87,10 @@ const SignUp = () => {
   };
 
   return (
-    <main className="xl:flex justify-evenly items-center xl:mt-[7rem] md:mt-[10rem] xxs:mt-[5rem]  sm:mx-[1rem] md:flex font-abel ">
-      <section className="lg:ml-[10rem] xxs:mx-auto  ">
-        <form
-          action="http://localhost:3000/login"
-          method="POST"
-          className="flex font-semibold flex-col justify-center  p-6 md:w-[18rem] xl:w-[30rem] box-border rounded-lg  shadow-3xl"
-        >
-          <p className="text-center xxs:mb-[50px]  font-carattere xl:text-5xl xxs:text-6xl xl:mt-5">
+    <main className="justify-evenly items-center xl:mt-[7rem] md:mt-[10rem] xxs:my-[3.5rem]  sm:mx-[1rem] md:flex font-abel ">
+      <section className="lg:ml-[18rem] xxs:mx-auto md:mx-0 ">
+        <form className="flex font-semibold flex-col justify-center  p-6 md:w-[18rem] xl:w-[30rem] box-border rounded-3xl xs:mx-[2rem] shadow-3xl">
+          <p className="text-center xxs:mb-[50px]  font-carattere xl:text-5xl xxs:text-5xl xl:mt-5">
             Jmart
           </p>
           <label className="xl:text-2xl xxs:text-xl pb-2  ">Name</label>

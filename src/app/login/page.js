@@ -23,7 +23,7 @@ const Page = () => {
       if (user.name === name && user.password === password) {
         return setTimeout(() => {
           router.push("/home");
-        }, 1000);
+        });
       }
     });
     if (validateForm()) {
@@ -53,7 +53,7 @@ const Page = () => {
   const router = useRouter();
 
   return (
-    <main className="md:flex justify-evenly items-center xxs:mt-[5rem] md:my-[13rem] xs:my-[12rem] lg:my-[8rem] sm:mx-[1rem] font-abel">
+    <main className="md:flex justify-evenly items-center xxs:my-[5rem] md:my-[13rem] xs:my-[7rem] lg:my-[8rem] sm:mx-[1rem] font-abel">
       <section className="lg:ml-[18rem] xxs:mx-auto md:mx-0 ">
         <form className="flex font-semibold flex-col justify-center  p-6 xxs:mx-[1rem] md:w-[20rem]  xs:mx-[2rem]  box-border rounded-3xl shadow-5xl">
           <p className="text-center mb-[50px] font-carattere sm:text-5xl xxs:text-4xl mt-5">
