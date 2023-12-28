@@ -84,7 +84,7 @@ const Page = () => {
             Submit
           </button>
           <p className="text-center md:py-10 xxs:py-5 xxs:text-[14px] sm:text-[16px] lg:[20px]">
-            Don't have an account?{" "}
+            Don't have an account?
             <span>
               <Link
                 href="/signup"
